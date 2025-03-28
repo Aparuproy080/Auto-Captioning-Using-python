@@ -1,0 +1,44 @@
+# Python Bytecode & Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+*.venv/
+
+# Log Files
+*.log
+auto_captioning.log
+
+# Temporary & Output Files
+*.mp3
+*.srt
+
+# FFmpeg Output Files
+*.wav
+*.aac
+*.ogg
+*.mkv
+*.mp4
+*.avi
+*.mov
+*.flv
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+
+# Python Package Dependencies
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebooks (if used)
+.ipynb_checkpoints/
+
+# VSCode & PyCharm Settings
+.vscode/
+.idea/
