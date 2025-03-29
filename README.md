@@ -33,6 +33,7 @@ pip install -r requirements.txt
 ```
 ### **3️⃣ Install FFmpeg (Required for audio extraction)**
 **Windows**
+
 Download from FFmpeg.org
 
 Add it to your system PATH
@@ -57,8 +58,6 @@ For GPU (CUDA) Acceleration
 Make sure PyTorch detects GPU:
 
 ```python
-Copy
-Edit
 import torch
 print(torch.cuda.is_available())  # Should return True
 ```
@@ -67,13 +66,12 @@ The script automatically runs on CUDA (GPU) if available
 Use float16 instead of int8 for faster transcription
 
 ***📜 Example Output (.srt File)***
-rust
-Copy
-Edit
+
+```txt
 1
 00:00:01,000 --> 00:00:05,500
 Hello, and welcome to our AI-based captioning tool.
 
 2
 00:00:06,000 --> 00:00:10,000
-This tool automatically generates subtitles for your videos.
+This tool automatically generates subtitles for your videos.```
