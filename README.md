@@ -19,48 +19,36 @@ An **AI-powered automatic captioning tool** that extracts audio from a video and
 ---
 
 ## 📦 Installation
+### **1️⃣ Clone the Repository**
 
-### **1️⃣ Install Dependencies**
+```bash
+git clone https://github.com/your-username/Auto-Captioning-Using-python.git
+cd Auto-Captioning-Using-python
+```
+### **2️⃣ Install Dependencies**
 Make sure you have **Python 3.8+** installed.
 
 ```bash
-pip install -r requirements.txt
-2️⃣ Install FFmpeg (Required for audio extraction)
-Windows
+pip install -r requirements.txt 
+```
+### **3️⃣ Install FFmpeg (Required for audio extraction)**
+**Windows**
 Download from FFmpeg.org
 
 Add it to your system PATH
 
-Linux (Ubuntu/Debian)
-bash
-Copy
-Edit
+**Linux (Ubuntu/Debian)**
+```bash
+
 sudo apt update && sudo apt install ffmpeg -y
-Mac (Homebrew)
-bash
-Copy
-Edit
+```
+**Mac (Homebrew)**
+
+```bash
 brew install ffmpeg
+```
 🎬 Usage
-Basic Command
-bash
-Copy
-Edit
-python auto_caption.py my_video.mp4
-Advanced Options
-bash
-Copy
-Edit
-python auto_caption.py my_video.mp4 --model base --keep-audio
-Option	Description
---model <size>	Choose model (tiny, small, base, medium, large)
---keep-audio	Keep extracted audio file (.mp3) after processing
-🏎️ Speed Optimization
-For Fastest Transcription on CPU
-bash
-Copy
-Edit
-python auto_caption.py my_video.mp4 --model tiny
+
 tiny model is fastest, but less accurate
 
 Use small for a balance of speed & accuracy
@@ -68,16 +56,17 @@ Use small for a balance of speed & accuracy
 For GPU (CUDA) Acceleration
 Make sure PyTorch detects GPU:
 
-python
+```python
 Copy
 Edit
 import torch
 print(torch.cuda.is_available())  # Should return True
+```
 The script automatically runs on CUDA (GPU) if available
 
 Use float16 instead of int8 for faster transcription
 
-📜 Example Output (.srt File)
+***📜 Example Output (.srt File)***
 rust
 Copy
 Edit
